@@ -1,0 +1,17 @@
+<template>
+  <!-- @if features.navigation!='navigation' -->
+  <h1>${message}</h1>
+  <!-- @endif -->
+  <!-- @if features.bootstrap='bootstrap' -->
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <!-- @endif -->
+  <!-- @if features.navigation='navigation' -->
+  <require from="nav-bar.html"></require>
+
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+  <!-- @endif -->
+</template>
