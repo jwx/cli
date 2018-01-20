@@ -76,51 +76,10 @@
     {
       "type": "input-text",
       "id": 200,
-      "nextActivity": 250,
+      "nextActivity": 300,
       "question": "Please enter a name for your new project below.",
       "stateProperty": "name",
       "defaultValue": "aurelia-app"
-    },
-    {
-      "id": 250,
-      "type": "input-multiselect",
-      "nextActivity": 300,
-      "question": "Which features do you want scaffolded into your project?",
-      "stateProperty": "features",
-      "options": [
-        {
-          "displayName": "None",
-          "description": "Just give me an empty project.",
-          "value": {
-            "id": "none",
-            "displayName": "None"
-          }
-        },
-        {
-          "displayName": "Navigation",
-          "description": "Add a router and some sample routes. (Also adds Bootstrap and Font Awesome.)",
-          "value": {
-            "id": "navigation",
-            "displayName": "Navigation"
-          }
-        },
-        {
-          "displayName": "Bootstrap",
-          "description": "Install and setup Bootstrap styles and features.",
-          "value": {
-            "id": "bootstrap",
-            "displayName": "Bootstrap"
-          }
-        },
-        {
-          "displayName": "Font Awesome",
-          "description": "Install and setup Font Awesome icons and styles.",
-          "value": {
-            "id": "fontAwesome",
-            "displayName": "Font Awesome"
-          }
-        }
-      ]
     },
     {
       "type": "input-select",
@@ -153,7 +112,7 @@
       "branches": [
         {
           "case": "default-esnext",
-          "nextActivity": 1000
+          "nextActivity": 950
         },
         {
           "case": "default-typescript",
@@ -168,7 +127,7 @@
     {
       "type": "state-assign",
       "id": 500,
-      "nextActivity": 1000,
+      "nextActivity": 950,
       "state": {
         "transpiler": {
           "id": "typescript",
@@ -545,7 +504,7 @@
     {
       "id": 900,
       "type": "input-select",
-      "nextActivity": 1000,
+      "nextActivity": 950,
       "question": "What is your default code editor?",
       "stateProperty": "editor",
       "options": [
@@ -587,6 +546,47 @@
           "value": {
             "id": "none",
             "displayName": "None"
+          }
+        }
+      ]
+    },
+    {
+      "id": 950,
+      "type": "input-multiselect",
+      "nextActivity": 1000,
+      "question": "Which features do you want scaffolded into your project?",
+      "stateProperty": "features",
+      "options": [
+        {
+          "displayName": "None",
+          "description": "Just give me an empty project.",
+          "value": {
+            "id": "none",
+            "displayName": "None"
+          }
+        },
+        {
+          "displayName": "Navigation",
+          "description": "Add a router and some sample routes. (Also adds Bootstrap and Font Awesome.)",
+          "value": {
+            "id": "navigation",
+            "displayName": "Navigation"
+          }
+        },
+        {
+          "displayName": "Bootstrap",
+          "description": "Install and setup Bootstrap styles and features.",
+          "value": {
+            "id": "bootstrap",
+            "displayName": "Bootstrap"
+          }
+        },
+        {
+          "displayName": "Font Awesome",
+          "description": "Install and setup Font Awesome icons and styles.",
+          "value": {
+            "id": "fontAwesome",
+            "displayName": "Font Awesome"
           }
         }
       ]
