@@ -4,8 +4,8 @@ import {HttpClient} from 'aurelia-fetch-client';
 
 @autoinject
 export class Users {
-  public heading = 'Github Users';
-  public users = [];
+  public heading: string = 'Github Users';
+  public users: any[] = [];
 
   constructor(private http: HttpClient) {
     http.configure(config => {
@@ -15,9 +15,14 @@ export class Users {
     });
   }
 
-  public activate() {
-    return this.http.fetch('users')
-      .then(response => response.json())
-      .then(users => this.users = users as any);
+  async activate(): Promise<void> {
+    this.http.configure(config => {
+      config
+        .useStandardConfiguration()
+        .withBaseUrl('https://api.github.com/');
+    });
+
+    const response = await this.http.fetch('users');
+    this.users = await response.json();
   }
 }
