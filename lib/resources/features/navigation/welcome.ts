@@ -1,17 +1,17 @@
 // import {computedFrom} from 'aurelia-framework';
 
 export class Welcome {
-  public heading = 'Welcome to the Aurelia Navigation App!';
-  public firstName = 'John';
-  public lastName = 'Doe';
-  private previousValue = this.fullName;
+  public heading: string = 'Welcome to the Aurelia Navigation App!';
+  public firstName: string = 'John';
+  public lastName: string = 'Doe';
+  private previousValue: string = this.fullName;
 
   // Getters can't be directly observed, so they must be dirty checked.
   // However, if you tell Aurelia the dependencies, it no longer needs to dirty check the property.
   // To optimize by declaring the properties that this getter is computed from, uncomment the line below
   // as well as the corresponding import above.
   // @computedFrom('firstName', 'lastName')
-  get fullName() {
+  get fullName(): string {
     return `${this.firstName} ${this.lastName}`;
   }
 
@@ -20,7 +20,7 @@ export class Welcome {
     alert(`Welcome, ${this.fullName}!`);
   }
 
-  public canDeactivate() {
+  public canDeactivate(): boolean | undefined {
     if (this.fullName !== this.previousValue) {
       return confirm('Are you sure you want to leave?');
     }
@@ -28,7 +28,7 @@ export class Welcome {
 }
 
 export class UpperValueConverter {
-  public toView(value) {
+  public toView(value: string): string {
     return value && value.toUpperCase();
   }
 }
