@@ -16,12 +16,6 @@ export class Users {
   }
 
   async activate(): Promise<void> {
-    this.http.configure(config => {
-      config
-        .useStandardConfiguration()
-        .withBaseUrl('https://api.github.com/');
-    });
-
     const response = await this.http.fetch('users');
     this.users = await response.json();
   }
