@@ -22,7 +22,7 @@
           "displayName": "None",
           "fileExtension": ".css"
         },
-        "unitTestRunner": [{
+        "unitTestRunners": [{
           "id": "jest",
           "displayName": "Jest"
         }, {
@@ -224,7 +224,7 @@
             "coverage": false
           }
         },
-        "unitTestRunner": [
+        "unitTestRunners": [
           {
             "id": "jest",
             "displayName": "Jest"
@@ -361,7 +361,7 @@
     {
       "id": 650,
       "type": "input-select",
-      "nextActivity": 660,
+      "nextActivity": 680,
       "question": "What css processor would you like to use?",
       "stateProperty": "cssProcessor",
       "options": [
@@ -413,51 +413,11 @@
       ]
     },
     {
-      "type": "branch-switch",
-      "id": 660,
-      "stateProperty": "bundler",
-      "branches": [
-        {
-          "case": "cli",
-          "nextActivity": 670
-        },
-        {
-          "case": "webpack",
-          "nextActivity": 680
-        }
-      ]
-    },
-    {
-      "id": 670,
-      "type": "input-select",
-      "nextActivity": 700,
-      "question": "Would you like to configure unit testing?",
-      "stateProperty": "unitTestRunner",
-      "options": [
-        {
-          "displayName": "Yes",
-          "description": "Configure your app with Jasmine and Karma.",
-          "value": {
-            "id": "karma",
-            "displayName": "Karma"
-          }
-        },
-        {
-          "displayName": "No",
-          "description": "Skip testing. My code is always perfect anyway.",
-          "value": {
-            "id": "none",
-            "displayName": "None"
-          }
-        }
-      ]
-    },
-    {
       "id": 680,
       "type": "input-multiselect",
       "nextActivity": 681,
       "question": "Which unit test runners would you like to use?",
-      "stateProperty": "unitTestRunner",
+      "stateProperty": "unitTestRunners",
       "options": [
         {
           "displayName": "None",
