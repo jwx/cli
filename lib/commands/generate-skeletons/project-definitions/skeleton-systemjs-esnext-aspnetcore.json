@@ -45,5 +45,8 @@
   "integrationTestRunner": {
     "id": "protractor",
     "displayName": "Protractor"
+  },
+  "features": {
+    "navigation": "navigation"
   }
 }
