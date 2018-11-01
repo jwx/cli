@@ -30,13 +30,16 @@ it('should display greeting', async () => {
   });
 
   it('should automatically write down the fullname', async () => {
-    poWelcome.setFirstname('John');
-    poWelcome.setLastname('Doe');
+    await poWelcome.setFirstname('Jane');
+    await poWelcome.setLastname('Doe');
 
-    // For now there is a timing issue with the binding.
-    // Until resolved we will use a short sleep to overcome the issue.
-    browser.sleep(200);
-    await expect(await poWelcome.getFullname()).toBe('JOHN DOE');
+    // binding is not synchronous,
+    // therefore we should wait some time until the binding is updated
+    await browser.wait(
+      ExpectedConditions.textToBePresentInElement(
+        poWelcome.getFullnameElement(), 'JANE DOE'
+      ), 200
+    );
   });
 
   it('should show alert message when clicking submit button', async () => {
@@ -44,7 +47,7 @@ it('should display greeting', async () => {
   });
 
   it('should navigate to users page', async () => {
-    poSkeleton.navigateTo('#/users');
+    await poSkeleton.navigateTo('#/users');
     browser.sleep(200);
     await expect(await poSkeleton.getCurrentPageTitle()).toBe('Github Users | Aurelia');
   });
