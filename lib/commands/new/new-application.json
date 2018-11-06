@@ -22,13 +22,10 @@
           "displayName": "None",
           "fileExtension": ".css"
         },
-        "unitTestRunners": [{
+        "unitTestRunner": {
           "id": "jest",
           "displayName": "Jest"
-        }, {
-          "id": "karma",
-          "displayName": "Karma"
-        }],
+        },
         "testFramework": {
           "id": "jasmine",
           "displayName": "Jasmine"
@@ -224,16 +221,10 @@
             "coverage": false
           }
         },
-        "unitTestRunners": [
-          {
-            "id": "jest",
-            "displayName": "Jest"
-          },
-          {
-            "id": "karma",
-            "displayName": "Karma"
-          }
-        ],
+        "unitTestRunner": {
+          "id": "jest",
+          "displayName": "Jest"
+        },
         "testFramework": {
           "id": "jasmine",
           "displayName": "Jasmine"
@@ -414,10 +405,10 @@
     },
     {
       "id": 680,
-      "type": "input-multiselect",
+      "type": "input-select",
       "nextActivity": 681,
-      "question": "Which unit test runners would you like to use?",
-      "stateProperty": "unitTestRunners",
+      "question": "Which unit test runner would you like to use?",
+      "stateProperty": "unitTestRunner",
       "options": [
         {
           "displayName": "None",
@@ -437,7 +428,7 @@
         },
         {
           "displayName": "Jest",
-          "description": "Configure your app with Jest and Jasmine",
+          "description": "Configure your app with Jest",
           "value": {
             "id": "jest",
             "displayName": "Jest"

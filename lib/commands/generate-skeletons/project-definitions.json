@@ -56,17 +56,11 @@
       "displayName": "Visual Studio Code"
     }
   ],
-  "unitTestRunners": [
-    [
-      {
-        "id": "jest",
-        "displayName": "Jest"
-      },
-      {
-        "id": "karma",
-        "displayName": "Karma"
-      }
-    ]
+  "unitTestRunner": [
+    {
+      "id": "jest",
+      "displayName": "Jest"
+    }
   ],
   "integrationTestRunner": [
     {
