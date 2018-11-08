@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-systemjs-typescript",
+  "name": "skeleton-requirejs-typescript-karma",
   "type": "project:application",
   "bundler": {
     "id": "cli",
@@ -10,8 +10,8 @@
     "displayName": "Web"
   },
   "loader": {
-    "id": "system",
-    "displayName": "SystemJS"
+    "id": "require",
+    "displayName": "RequireJS"
   },
   "transpiler": {
     "id": "typescript",
@@ -33,8 +33,8 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",

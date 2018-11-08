@@ -1,22 +1,29 @@
 {
-  "name": "skeleton-requirejs-typescript",
+  "name": "skeleton-webpack-esnext-karma",
   "type": "project:application",
   "bundler": {
-    "id": "cli",
-    "displayName": "Aurelia-CLI"
+    "id": "webpack",
+    "displayName": "Webpack"
+  },
+  "build": {
+    "options": {
+      "server": "dev",
+      "extractCss": "prod",
+      "coverage": false
+    }
   },
   "platform": {
     "id": "web",
     "displayName": "Web"
   },
   "loader": {
-    "id": "require",
-    "displayName": "RequireJS"
+    "id": "none",
+    "displayName": "None"
   },
   "transpiler": {
-    "id": "typescript",
-    "displayName": "TypeScript",
-    "fileExtension": ".ts"
+    "id": "babel",
+    "displayName": "Babel",
+    "fileExtension": ".js"
   },
   "markupProcessor": {
     "id": "minimum",
@@ -33,8 +40,8 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",

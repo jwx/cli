@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-webpack-typescript",
+  "name": "skeleton-webpack-typescript-karma",
   "type": "project:application",
   "bundler": {
     "id": "webpack",
@@ -40,8 +40,8 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",

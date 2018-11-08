@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-requirejs-esnext-aspnetcore",
+  "name": "skeleton-systemjs-typescript-karma-aspnetcore",
   "type": "project:application",
   "bundler": {
     "id": "cli",
@@ -10,13 +10,13 @@
     "displayName": "ASP.NET Core"
   },
   "loader": {
-    "id": "require",
-    "displayName": "RequireJS"
+    "id": "system",
+    "displayName": "SystemJS"
   },
   "transpiler": {
-    "id": "babel",
-    "displayName": "Babel",
-    "fileExtension": ".js"
+    "id": "typescript",
+    "displayName": "TypeScript",
+    "fileExtension": ".ts"
   },
   "markupProcessor": {
     "id": "minimum",
@@ -33,8 +33,8 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",

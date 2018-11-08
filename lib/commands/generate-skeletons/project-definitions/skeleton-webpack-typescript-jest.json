@@ -1,22 +1,29 @@
 {
-  "name": "skeleton-systemjs-esnext",
+  "name": "skeleton-webpack-typescript-jest",
   "type": "project:application",
   "bundler": {
-    "id": "cli",
-    "displayName": "Aurelia-CLI"
+    "id": "webpack",
+    "displayName": "Webpack"
+  },
+  "build": {
+    "options": {
+      "server": "dev",
+      "extractCss": "prod",
+      "coverage": false
+    }
   },
   "platform": {
     "id": "web",
     "displayName": "Web"
   },
   "loader": {
-    "id": "system",
-    "displayName": "SystemJS"
+    "id": "none",
+    "displayName": "None"
   },
   "transpiler": {
-    "id": "babel",
-    "displayName": "Babel",
-    "fileExtension": ".js"
+    "id": "typescript",
+    "displayName": "TypeScript",
+    "fileExtension": ".ts"
   },
   "markupProcessor": {
     "id": "minimum",
