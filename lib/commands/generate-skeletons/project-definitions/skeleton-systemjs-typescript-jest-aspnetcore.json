@@ -1,24 +1,17 @@
 {
-  "name": "skeleton-webpack-typescript-aspnetcore",
+  "name": "skeleton-systemjs-typescript-jest-aspnetcore",
   "type": "project:application",
   "bundler": {
-    "id": "webpack",
-    "displayName": "Webpack"
-  },
-  "build": {
-    "options": {
-      "server": "dev",
-      "extractCss": "prod",
-      "coverage": false
-    }
+    "id": "cli",
+    "displayName": "Aurelia-CLI"
   },
   "platform": {
     "id": "aspnetcore",
     "displayName": "ASP.NET Core"
   },
   "loader": {
-    "id": "none",
-    "displayName": "None"
+    "id": "system",
+    "displayName": "SystemJS"
   },
   "transpiler": {
     "id": "typescript",
@@ -34,6 +27,11 @@
     "id": "none",
     "displayName": "None",
     "fileExtension": ".css"
+  },
+  "jsonProcessor": {
+    "id": "none",
+    "displayName": "None",
+    "fileExtension": ".json"
   },
   "editor": {
     "id": "vscode",

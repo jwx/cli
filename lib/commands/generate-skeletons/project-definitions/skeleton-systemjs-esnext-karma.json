@@ -1,29 +1,22 @@
 {
-  "name": "skeleton-webpack-typescript",
+  "name": "skeleton-systemjs-esnext-karma",
   "type": "project:application",
   "bundler": {
-    "id": "webpack",
-    "displayName": "Webpack"
-  },
-  "build": {
-    "options": {
-      "server": "dev",
-      "extractCss": "prod",
-      "coverage": false
-    }
+    "id": "cli",
+    "displayName": "Aurelia-CLI"
   },
   "platform": {
     "id": "web",
     "displayName": "Web"
   },
   "loader": {
-    "id": "none",
-    "displayName": "None"
+    "id": "system",
+    "displayName": "SystemJS"
   },
   "transpiler": {
-    "id": "typescript",
-    "displayName": "TypeScript",
-    "fileExtension": ".ts"
+    "id": "babel",
+    "displayName": "Babel",
+    "fileExtension": ".js"
   },
   "markupProcessor": {
     "id": "minimum",
@@ -40,8 +33,8 @@
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",

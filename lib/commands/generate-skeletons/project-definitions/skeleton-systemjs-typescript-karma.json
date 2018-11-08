@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-systemjs-typescript",
+  "name": "skeleton-systemjs-typescript-karma",
   "type": "project:application",
   "bundler": {
     "id": "cli",
@@ -28,18 +28,13 @@
     "displayName": "None",
     "fileExtension": ".css"
   },
-  "jsonProcessor": {
-    "id": "none",
-    "displayName": "None",
-    "fileExtension": ".json"
-  },
   "editor": {
     "id": "vscode",
     "displayName": "Visual Studio Code"
   },
   "unitTestRunner": {
-    "id": "jest",
-    "displayName": "Jest"
+    "id": "karma",
+    "displayName": "Karma"
   },
   "integrationTestRunner": {
     "id": "protractor",
