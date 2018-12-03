@@ -109,7 +109,7 @@
       "branches": [
         {
           "case": "default-esnext",
-          "nextActivity": 950
+          "nextActivity": 1000
         },
         {
           "case": "default-typescript",
@@ -124,7 +124,7 @@
     {
       "type": "state-assign",
       "id": 500,
-      "nextActivity": 950,
+      "nextActivity": 1000,
       "state": {
         "transpiler": {
           "id": "typescript",
@@ -558,26 +558,10 @@
         },
         {
           "displayName": "Navigation",
-          "description": "Add a router and some sample routes. (Also adds Bootstrap and Font Awesome.)",
+          "description": "Add a router and some sample routes. (Also adds Bootstrap 3 and Font Awesome.)",
           "value": {
             "id": "navigation",
             "displayName": "Navigation"
-          }
-        },
-        {
-          "displayName": "Bootstrap",
-          "description": "Install and setup Bootstrap styles and features.",
-          "value": {
-            "id": "bootstrap",
-            "displayName": "Bootstrap"
-          }
-        },
-        {
-          "displayName": "Font Awesome",
-          "description": "Install and setup Font Awesome icons and styles.",
-          "value": {
-            "id": "fontAwesome",
-            "displayName": "Font Awesome"
           }
         }
       ]
